@@ -1,0 +1,9 @@
+export 'contacts_screen.dart';
+export 'home_screen.dart';
+export 'list_screen.dart';
+export 'shared_methods.dart';
+export 'collect_user_data.dart';
+export 'general_files/calc.dart';
+export 'general_files/calc_results.dart';
+export 'general_files/names_list.dart';
+export 'general_files/user_data.dart';
