@@ -7,3 +7,7 @@ export 'general_files/calc.dart';
 export 'general_files/calc_results.dart';
 export 'general_files/names_list.dart';
 export 'general_files/user_data.dart';
+export 'pick_image/create_profile.dart';
+export 'pick_image/pick_image.dart';
+export 'pick_image/confirm_profile_image.dart';
+export 'pick_an_image.dart';
