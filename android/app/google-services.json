@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "887514036294",
+    "project_id": "acm-training-app",
+    "storage_bucket": "acm-training-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887514036294:android:8a1f122c1f635f82a4b247",
+        "android_client_info": {
+          "package_name": "com.example.students_service_sharing_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwEgol1L5YeUFXRr69Fhl6clXcR7kti-U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887514036294:android:b48c5f810666f9fca4b247",
+        "android_client_info": {
+          "package_name": "com.flutter.test_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwEgol1L5YeUFXRr69Fhl6clXcR7kti-U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
