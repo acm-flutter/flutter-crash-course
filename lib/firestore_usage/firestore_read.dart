@@ -10,22 +10,15 @@ class GetUserName extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder<DocumentSnapshot>(
+    return FutureBuilder<UserModel>(
       future: FirestoreFunctions().getUser(documentId: documentId),
-      builder:
-          (BuildContext context, AsyncSnapshot<DocumentSnapshot> snapshot) {
+      builder: (BuildContext context, snapshot) {
         if (snapshot.hasError) {
-          return Text("Something went wrong");
+          return Text("Something went wrong ${snapshot.error}");
         }
-
-        if (snapshot.hasData && !snapshot.data!.exists) {
-          return Text("Document does not exist");
-        }
-        if (snapshot.connectionState == ConnectionState.done) {
-          Map<String, dynamic> data =
-              snapshot.data!.data() as Map<String, dynamic>;
-          UserModel user = UserModel().fromMap(data: data);
-          return Text("Data from firebase: ${user.name} ${user.phoneNumber}");
+        if (snapshot.hasData) {
+          var user = snapshot.data;
+          return Text("Data from firebase: ${user!.name} ${user.phoneNumber}");
         }
         return Text("loading");
       },

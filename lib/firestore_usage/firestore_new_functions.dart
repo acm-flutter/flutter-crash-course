@@ -20,7 +20,9 @@ class AddUser extends StatelessWidget {
           children: [
             TextButton(
               onPressed: () {
-                FirestoreFunctions().createUser(user: user);
+                FirestoreFunctions().createUser(
+                  user: user,
+                );
               },
               child: Text(
                 "Add User",
@@ -29,7 +31,7 @@ class AddUser extends StatelessWidget {
             SizedBox(
               height: 30,
             ),
-            GetUserName("QahZ9PqTUxFYS5YjlvTu"),
+            GetUserName("GQjIMZv0tPHgiPJKsjG4"),
           ],
         ),
       ),

@@ -6,9 +6,14 @@ import 'package:test_app/pick_image/confirm_profile_image.dart';
 
 File? imageFile;
 
-class PickImage extends StatelessWidget {
+class PickImage extends StatefulWidget {
   const PickImage({super.key});
 
+  @override
+  State<PickImage> createState() => _PickImageState();
+}
+
+class _PickImageState extends State<PickImage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,12 +53,9 @@ class PickImage extends StatelessWidget {
                     ),
                   );
                 } else {
-                  imageFile = File(pickedImage.path);
-                  // goto(
-                  //   context: context,
-                  //   screen: ConfirmImage(
-                  //   ),
-                  // );
+                  setState(() {
+                    imageFile = File(pickedImage.path);
+                  });
                 }
               },
             ),
